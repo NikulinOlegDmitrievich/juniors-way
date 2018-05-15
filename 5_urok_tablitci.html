@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание табличек</title>
+    <!--Создание рамочек style-->
+    <!--collapse- нужен что бы рамочка была одна, width- ширина-->
+    <style>
+        table, td {border: 1px solid black}
+        th {border: 3px solid black}
+        table {border-collapse: collapse; width: 70%}
+        
+    </style>
+</head>
+<body>
+    <!--Создание таблиц-->
+    <table>
+        <!--Заголовок таблици-->
+        <caption>Сыновья абдурахмана</caption>
+       
+        <thead>
+            <!--Новая строка таблици tr(table row)-->
+            <tr>
+                <!--Заголовок (table header)-->
+                <th>1</th>
+                <th>первый</th>
+                <th>второй</th>
+                <th>третий</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!--Ячейка таблици td, class="first"- ? -->
+                <td rowspan="3" class="first">2</td>
+                <td>Хабиб</td>
+                <td>Махмуд</td>
+                <td>Аджик</td>
+                
+            </tr>
+            <tr>
+                <!--Ячейка таблици td-->
+                
+                <td>Хабиб</td>
+                <td>Махмуд</td>
+                <td>Аджик</td>
+                    
+            </tr>
+            <tr>
+                <!--Ячейка таблици td-->
+                
+                <td>Хабиб</td>
+                <td>Махмуд</td>
+                <td>Аджик</td>
+                        
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!--Задаем количество строк для объединения, style="text-align:right- равняет по правой стороне-->
+                <td colspan="3" style="text-align:right">Итого</td><td>биба и боба
+                три долбаеба</td>
+                
+                                
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
