@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Формы html</title>
+</head>
+<body>
+ 
+ <!--Контейнер для формы-->   
+<!--action- сюда записуется адресс сервера,
+на который надо отправить данные???-->
+<!--autocomplete - on or off атоматически подставляет данные, которые 
+запомнил браузер-->
+ 
+<form action="#" autocomplete="off">
+
+    <!--Fildset- строка для заполнения, legend- ее название-->
+    <fieldset>
+        <legend>
+            Регистрация
+        </legend>
+        <!--value- автоматически набраное слово при открытии страници-->
+
+        <label for="user-name">Введите Имя</label>
+        <input id="user-name" type="text" required maxlength="7" minlength="2"
+        placeholder="Маска в поле набора" autocomplete="off" 
+        value="ХУЙ"> <br>
+
+        <label for="#">Номер телефона</label>
+        <input type="tel" pattern="+3-[0-9]{3}-[0-9]{4}" 
+        placeholder="+380508819883"> <br>
+   
+        <label for="#"> email </label>
+        <input type="email" > <br>
+
+        <label for="#">Любимая еда</label> <br>
+        
+        <label for="borsh"></label>
+        <input id="borsh" type="checkbox" name="food" required>
+
+        <label for="govno"></label>
+        <input id="govno" type="checkbox" name="food" required> <br>
+
+        <label for="#">Любимая фирма</label>
+        
+        <label for="adik"></label>
+        <input id="adik" type="radio" name="bot" required>
+
+        <label for="nike"></label>
+        <input id="nike" type="radio" name="bot" required>
+       
+        <input type="file" multiple> <br>
+
+        <input type="password"> <br>
+
+        <input type="reset"> <br>
+
+        <!--Развернутый коммент-->
+        <textarea cols="50" rows="5"></textarea> <br> <br>
+        <!--Выплывающий список-->
+        <select size="2">
+            <option value="">Москва</option>
+            <option value="">Донецк</option>
+            <option value="">Аджика</option>
+
+        </select> <br> <br>
+
+        <select >
+            <option value="">Москва</option>
+            <option value=""selected>Донецк</option>
+            <option value=""disabled>Аджика</option>
+        </select>
+
+        <!--кнопка-->
+        <input type="submit" value="отправить">
+        
+        <button type="submit">кнопка №2</button>
+    
+    </fieldset>
+    
+
+   
+</form>
+
+
+
+
+
+</body>
+</html>
