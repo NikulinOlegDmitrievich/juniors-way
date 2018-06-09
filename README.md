@@ -1,1 +1,0 @@
-### Kulek's way to Junior
